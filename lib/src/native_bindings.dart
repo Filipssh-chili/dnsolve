@@ -105,7 +105,7 @@ class NativeResolver {
   /// Loads the platform-specific native library.
   static DynamicLibrary _loadLibrary() {
     if (Platform.isMacOS || Platform.isIOS) {
-      return DynamicLibrary.open('libdnsolve_native.dylib');
+      return DynamicLibrary.open('DNSolve.framework/DNSolve');
     } else if (Platform.isLinux || Platform.isAndroid) {
       return DynamicLibrary.open('libdnsolve_native.so');
     } else if (Platform.isWindows) {

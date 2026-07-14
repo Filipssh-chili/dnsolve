@@ -1,0 +1,7 @@
+
+framework module DNSolve {
+  umbrella header "libdnsolve_native.h"
+
+  export *
+  module * { export * }
+}

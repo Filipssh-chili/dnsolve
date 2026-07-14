@@ -7,6 +7,15 @@ edition = "2021"
 name = "dnsolve_native"
 crate-type = ["cdylib"]
 
+[package.metadata.xcframework]
+include-dir = "include"
+lib-type = "cdylib"
+zip = false
+build-std = false
+macOS = false
+simulators = true
+iOS = true
+
 [dependencies]
 hickory-resolver = { version = "0.24", features = ["dnssec-ring"] }
 hickory-proto = "0.24"

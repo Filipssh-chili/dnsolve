@@ -8,6 +8,7 @@ pubspec.lock
 
 # Rust build artifacts
 native/target/
+native/include/*.h
 
 # Compiled native libraries (should be built locally)
 *.dylib
@@ -16,3 +17,9 @@ native/target/
 
 # OS
 .DS_Store
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
